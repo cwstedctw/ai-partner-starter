@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>先看這裡：我的 AI 夥伴：起手資料夾</title>
+<style>
+:root{--bg:#f7f5f0;--card:#fff;--ink:#22272e;--mute:#5d6672;--line:#ddd8cd;--accent:#1f6f5c;--soft:#e7f1ee;--warn:#8a5a00;--warnbg:#fdf3dc;--code:#f1efe9}
+@media (prefers-color-scheme:dark){:root{--bg:#171a1d;--card:#20252a;--ink:#e6e3dc;--mute:#a2aab3;--line:#353c44;--accent:#6cc5ae;--soft:#1d2f2b;--warn:#f0c674;--warnbg:#33290f;--code:#2a3037}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.75 -apple-system,"Segoe UI","Microsoft JhengHei","PingFang TC","Noto Sans TC",sans-serif}
+main{max-width:820px;margin:0 auto;padding:28px 16px 90px}
+h1{font-size:1.7rem;line-height:1.35;margin:.2em 0 .3em}
+h2{font-size:1.25rem;margin:1.8em 0 .2em}
+h3{font-size:1.12rem;margin:0 0 .4em;display:flex;gap:.6em;align-items:baseline;flex-wrap:wrap}
+h3 .n{flex:none;min-width:1.9em;height:1.9em;border-radius:50%;background:var(--accent);color:var(--bg);display:inline-flex;align-items:center;justify-content:center;font-size:.95rem}
+h4{font-size:1rem;margin:1em 0 .2em}
+p{margin:.5em 0}
+.lead{color:var(--mute)}
+section,.item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px 14px;margin:14px 0}
+.tag{font-size:.8rem;color:var(--accent);background:var(--soft);border-radius:999px;padding:.1em .7em;white-space:nowrap}
+.say,.cmd,.ask{position:relative;background:var(--code);border-radius:8px;padding:12px 84px 12px 14px;margin:.6em 0;white-space:pre-wrap;word-break:break-word}
+.cmd{font-family:Consolas,Menlo,monospace;font-size:.92rem}
+.say::before{content:"貼給 AI 夥伴";display:block;font-size:.78rem;color:var(--accent);margin-bottom:.2em}
+.ask::before{content:"卡住怎麼問 AI";display:block;font-size:.78rem;color:var(--warn);margin-bottom:.2em}
+button.cp{position:absolute;top:8px;right:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;padding:.25em .8em;font-size:.85rem;cursor:pointer}
+button.cp.ok{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.pass{border-left:4px solid var(--accent);background:var(--soft);padding:.6em .9em;border-radius:0 8px 8px 0;margin:.7em 0}
+.pass::before{content:"完成判準　";color:var(--accent);font-weight:600}
+.note{border-left:4px solid var(--accent);background:var(--soft);padding:.6em .9em;border-radius:0 8px 8px 0;margin:.7em 0}
+.warn{border-left:4px solid var(--warn);background:var(--warnbg);padding:.6em .9em;border-radius:0 8px 8px 0;margin:.7em 0}
+table{border-collapse:collapse;width:100%;margin:.6em 0;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:.45em .6em;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+.scroll{overflow-x:auto}
+code{background:var(--code);padding:.05em .35em;border-radius:4px;font-family:Consolas,Menlo,monospace;font-size:.92em}
+a{color:var(--accent)}
+details{margin:.6em 0}
+summary{cursor:pointer;color:var(--accent)}
+label.done{display:block;margin-top:.9em;padding-top:.7em;border-top:1px dashed var(--line);cursor:pointer}
+label.done input{transform:scale(1.25);margin-right:.5em}
+nav{font-size:.92rem;color:var(--mute)}
+nav a{margin-right:.9em;white-space:nowrap}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem;display:flex;gap:1em;align-items:center;flex-wrap:wrap}
+.bar progress{flex:1;min-width:120px;height:10px;accent-color:var(--accent)}
+.bar button{border:1px solid var(--line);background:var(--card);color:var(--mute);border-radius:6px;padding:.15em .7em;cursor:pointer}
+@media print{button.cp,.bar{display:none}.item,section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<p class="lead">陳文盛老師（國立東華大學）準備・2026-11-10 版</p>
+<h1>我的 AI 夥伴：起手資料夾</h1>
+<p>這個資料夾讓你的 AI（ChatGPT 桌面版的 Codex，或 Claude 的 Code）變成會記事、照規矩做事的夥伴：記你每門課的作業與手上的事、做作業時當家教不當代筆、幫你查核資料來源、整理小組討論。修課的同學、研究生、老師、上班族都能用；用久了，它就是你自己的版本。</p>
+<p><b>你不用打指令。</b>灰色框裡的句子按「複製」、貼給 AI，它一步一步做，每一步先問你。你只做三種事：電腦問「是否允許」時按「是」、在瀏覽器登入自己的帳號、聽它說明之後說「好」。</p>
+<p>下面一共 12 項，前 10 項人人要做，其餘選配。每一項都有「完成判準」：打勾之前照它看一眼，把關的人是你自己。第一次做，請留一個晚上；要下載安裝的幾項，網路慢時會等比較久。</p>
+<nav><a href="#what">會裝到什麼</a><a href="#shot">先學截圖</a><a href="#items">一項一項做</a><a href="#daily">平常怎麼用</a><a href="#stuck">卡住怎麼辦</a><a href="#final">最後自我檢查</a><a href="#diy">附錄：自己裝</a></nav>
+<div class="bar"><span id="cnt">完成 0／12</span><progress id="pg" max="12" value="0"></progress><button type="button" id="rst">清除進度</button></div>
+<p class="lead">勾選狀態只存在這台電腦的瀏覽器裡，不會傳給任何人。</p>
+
+<h2 id="what">〇　全部會裝到什麼</h2>
+<section>
+<div class="scroll"><table>
+<tr><th>東西</th><th>它是做什麼的</th><th>誰裝</th><th>一定要嗎</th></tr>
+<tr><td>AI 桌面版</td><td>你的 AI 夥伴本人。跟聊天網頁不同：它裝在你的電腦上，能在你允許的資料夾裡讀檔、建檔、改檔、跑工具</td><td>你</td><td>要</td></tr>
+<tr><td>GitHub 帳號</td><td>GitHub 是放資料夾、留下每一版的雲端。用來把你的夥伴資料夾存成只有你看得到的備份</td><td>你</td><td>要</td></tr>
+<tr><td>Git</td><td>替一個資料夾記住每一次修改的工具；改壞了能回到前一版</td><td>AI</td><td>要</td></tr>
+<tr><td>GitHub CLI（指令叫 <code>gh</code>）</td><td>讓 AI 替你操作 GitHub：存上去、抓回來。CLI 是「用打字下指令的工具」，你不用自己打</td><td>AI</td><td>要</td></tr>
+<tr><td>gws</td><td>Google Workspace 的指令工具。讓 AI 找信、讀信、把回信建成 Gmail 草稿、讀雲端硬碟。草稿一律你自己看過、自己按傳送</td><td>AI</td><td>選配</td></tr>
+<tr><td>Node.js、uv</td><td>gws 需要的兩個幫手程式；你不會直接用到</td><td>AI</td><td>要用 gws 才要</td></tr>
+</table></div>
+
+</section>
+
+<h2 id="shot">壹　先學一招：怎麼截圖、怎麼求救</h2>
+<section>
+<p>下面每一項卡住，都是靠「把畫面拿給 AI 看」解決的。先學起來，後面就不會耗在原地。</p>
+<ul>
+<li>Windows：按 <b>Win＋Shift＋S</b>，框選想拍的範圍；回到 AI 的輸入框按 Ctrl＋V 貼上。</li>
+<li>Mac：按 <b>Control＋Command＋Shift＋4</b>（要加 Control，圖才會進剪貼簿），框選範圍；回到輸入框按 Command＋V 貼上。</li>
+</ul>
+<p>截好圖，配這句一起貼。哪一項卡住就填哪一項：</p>
+<div class="ask">我在照「先看這裡.html」準備 AI 夥伴資料夾，第＿＿項「＿＿＿」卡住了，畫面如附圖。請先只看、不要動：告訴我畫面上發生了什麼事、哪裡不對勁；再一步一步帶我做，每次只說一步。如果需要我輸入這台電腦的系統管理員密碼，先停下來告訴我，我自己輸入。</div>
+<p>還沒裝好 AI 桌面版之前，這句貼給你慣用的 AI 聊天網頁（ChatGPT、Gemini、Claude 都可以）；裝好之後直接問它。</p>
+<div class="warn"><b>三樣東西不交給任何 AI：</b>密碼、驗證碼、電腦的系統管理員密碼。登入一律在瀏覽器裡你自己輸入。</div>
+</section>
+
+<h2 id="items">貳　一項一項做</h2>
+
+<div class="item" id="i1">
+<h3><span class="n">1</span>裝 AI 桌面版，找到可以叫它動手的那個模式<span class="tag">你自己裝・Windows／Mac 都要</span></h3>
+<p><b>為什麼：</b>聊天網頁只會回答文字。桌面版裡的「Codex」（ChatGPT）或「Code」（Claude）才會打開你的資料夾替你做事，這份資料夾靠的就是它。</p>
+<h4>ChatGPT 桌面版（裡面有 Codex）</h4>
+<ol>
+<li>先到 <a href="https://chatgpt.com">chatgpt.com</a> 登入或註冊，記住用的是哪個帳號。桌面版要用同一個帳號登入。</li>
+<li>Windows：打開 Microsoft Store，搜尋「ChatGPT」，會看到兩個，裝名字就叫「ChatGPT」的那一個，不是「ChatGPT Classic」（Classic 是舊版，裡面沒有 Codex）。Mac：到 <a href="https://chatgpt.com/download">chatgpt.com/download</a> 下載，拖進「應用程式」。</li>
+<li>打開、登入。左上角寫著「ChatGPT」的選單可以切 ChatGPT／Codex，切到 <b>Codex</b>。找不到 Codex：先確認登入的是同一個帳號、裝的不是 Classic；還是沒有，<b>停在這一項</b>，用下面的求救句問，不要往下做。</li>
+</ol>
+<h4>Claude 桌面版（裡面有 Code）</h4>
+<ol>
+<li>到 <a href="https://claude.ai/download">claude.ai/download</a> 下載、安裝、登入。</li>
+<li>切到 <b>Code</b> 分頁。Claude 的 Code 要付費方案（Pro 以上），免費帳號沒有。</li>
+</ol>
+<div class="note"><b>沒有付費方案的同學：</b>ChatGPT 免費帳號也能用 Codex，但額度有限，做到一半可能要等。課堂上老師若指定了別的免費工具（例如 Antigravity；它要用個人 Gmail 登入，學校信箱登不進去），照老師的；打開同一個資料夾、貼「請讀 AGENTS.md，報到。」一樣能用，只是畫面與下面寫的不同。</div>
+<p>兩家選一家就好。哪個方案有這個功能、額度多少，各家常改；以你登入後畫面上看到的、和官方方案頁為準。</p>
+<div class="pass">桌面版打得開、登入的是你自己的帳號、切到 Codex（或 Code 分頁）之後看得到一個可以打字的輸入框。先不要叫它做事。</div>
+<div class="ask">我在裝＿＿（ChatGPT 桌面版／Claude 桌面版），卡在＿＿＿（例如：登入被擋／裝好打不開／找不到 Codex／不確定裝的是不是 Classic），畫面如附圖。請告訴我畫面上發生什麼事，再一步一步帶我。我用的是＿＿（Windows／Mac）。</div>
+<label class="done"><input type="checkbox" data-k="1">第 1 項完成</label>
+</div>
+
+<div class="item" id="i2">
+<h3><span class="n">2</span>跟 AI 夥伴打第一聲招呼<span class="tag">1 分鐘</span></h3>
+<p><b>為什麼：</b>先確認它會回話。後面卡住時，才分得清是工具壞了、還是某一步做錯。</p>
+<div class="say">你好。請告訴我：你現在看得到哪一個資料夾？如果沒有打開任何資料夾，也直接告訴我。</div>
+<div class="pass">一分鐘內它回了一段話，有沒有資料夾都算。這代表工具會動、登入成功、網路通。它要你先選一個資料夾才肯對話的話，先做第 5 項，再回來貼這句。</div>
+<div class="ask">我貼了一句話給你，但＿＿＿（例如：沒有回應／回了錯誤訊息／說額度用完），畫面如附圖。請告訴我可能是什麼原因，我該先檢查什麼。</div>
+<label class="done"><input type="checkbox" data-k="2">第 2 項完成</label>
+</div>
+
+<div class="item" id="i3">
+<h3><span class="n">3</span>調一下授權：要它「先問我」<span class="tag">1 分鐘</span></h3>
+<p><b>為什麼：</b>這一項只決定一件事：AI 要在你的電腦上跑指令、碰資料夾以外的東西時，要不要先問你。選「會先問我」的那一種。</p>
+<ul>
+<li>ChatGPT 的 Codex：輸入框正下方有一個權限選單，選 <b>Ask for approval</b>（中文介面是「要求核准」）。不要選 Full access（完整存取權）。</li>
+<li>Claude 的 Code：輸入框附近的權限模式選會先詢問的那一種（預設就是）；不要選略過所有確認的模式。</li>
+</ul>
+<p>字樣會隨版本變，找意思對得上的那一個。之後它跳框請你同意時這樣判斷：先看它在對話裡說這一步要做什麼，跟框裡寫的對得上（例如它說要裝 Git，框裡有 git 這個字）就同意，選「只同意這一次」那種；看不懂就按拒絕，再問它「這一步要做什麼」。拒絕不會弄壞東西。</p>
+<div class="pass">你說得出自己選的是哪一個，而且不是「全部自動、什麼都不問」的那一種。</div>
+<div class="ask">我在找 AI 桌面版的權限設定，想選「執行指令前先問我」的那一種，但找不到（或不確定哪個是），畫面如附圖。請告訴我該選哪一個、每個選項差在哪。</div>
+<label class="done"><input type="checkbox" data-k="3">第 3 項完成</label>
+</div>
+
+<div class="item" id="i4">
+<h3><span class="n">4</span>GitHub 帳號<span class="tag">你自己做・5 分鐘</span></h3>
+<p><b>為什麼：</b>夥伴資料夾會越用越有價值，要有地方備份、換電腦抓得回來。GitHub 上可以開「只有你看得到」的私人資料夾（GitHub 把一個資料夾叫做 repo；私人的叫 Private）。</p>
+<ol>
+<li>到 <a href="https://github.com/signup">github.com/signup</a>，填 Email、設密碼。</li>
+<li>取一個帳號名（Username）：會出現在網址上，用英文名或英文名加數字，之後改起來麻煩。</li>
+<li>到信箱收驗證碼填回網頁；後面的問卷可以按 Skip。跳出教育方案之類的廣告畫面，關掉就好。</li>
+<li>登入時如果 GitHub 要你設定兩步驟驗證（2FA），照它做：手機裝一個驗證 App（Google Authenticator 或 Microsoft Authenticator），掃網頁上的方格圖，把六位數字填回去，最後把那一串復原碼存好。沒被要求就先不用。</li>
+</ol>
+
+<div class="pass">能登入，看得到自己的個人頁（網址是 <code>github.com/你的帳號名</code>）。</div>
+<div class="ask">我在 GitHub＿＿＿（註冊帳號／設定兩步驟驗證／接受邀請），卡在＿＿＿（例如：收不到驗證信／畫面要我做一件我看不懂的事），畫面如附圖。請告訴我這一步在做什麼，再一步一步帶我完成。</div>
+<label class="done"><input type="checkbox" data-k="4">第 4 項完成</label>
+</div>
+
+<div class="item" id="i5">
+<h3><span class="n">5</span>決定資料夾放哪，建一個空資料夾<span class="tag">2 分鐘</span></h3>
+<p><b>為什麼：</b>夥伴資料夾不能放在會自動同步的地方。「同步」＝你一改檔案，雲端（OneDrive、iCloud、Google 雲端硬碟）就自動複製一份上網；它會跟 Git 的版本紀錄打架：檔案被鎖住、出現重複檔、紀錄對不上，而且不會跳出任何錯誤訊息。Windows 的「桌面」「文件」常常就在 OneDrive 裡。</p>
+<ul>
+<li>Windows：建 <code>D:\AI夥伴</code>；沒有 D 槽就 <code>C:\AI夥伴</code>。（打開檔案總管 → 進 D 槽 → 空白處按右鍵 →「新增」→「資料夾」。）</li>
+<li>Mac：家目錄底下建 <code>AI夥伴</code>。（Finder 選單「前往」→「個人專屬」→ 按右鍵「新增檔案夾」。）</li>
+</ul>
+<p>不確定那個位置會不會被同步，問 AI：</p>
+<div class="say">請幫我確認：這台電腦的桌面與文件資料夾，有沒有被 OneDrive、iCloud 或 Google 雲端硬碟同步？我想把一個新資料夾放在不會被同步的位置；只把建議位置的完整路徑印給我看，先不要建任何資料夾。</div>
+<p>然後讓 AI 桌面版打開這個空資料夾：</p>
+<ul>
+<li>ChatGPT 的 Codex：輸入框上方點「選擇專案」→「新專案」→「來源資料夾」選剛建的資料夾 →「建立專案」。</li>
+<li>Claude 的 Code：在 Code 分頁開一個新的工作階段，它問要用哪個資料夾時，選剛建的資料夾。</li>
+</ul>
+<p>按鈕字樣會隨版本變；找不到就截圖用下面的求救句問。「完整路徑」是資料夾在電腦裡的完整地址，例如 <code>D:\AI夥伴</code>。</p>
+<div class="pass">資料夾建好了、是空的，完整路徑裡沒有 OneDrive、iCloud、Google Drive 的字樣；AI 桌面版已經打開這個資料夾。</div>
+<div class="ask">我要在 AI 桌面版打開我剛建的空資料夾（路徑是＿＿＿），但找不到「開啟資料夾」在哪，畫面如附圖。請告訴我按哪裡。</div>
+<label class="done"><input type="checkbox" data-k="5">第 5 項完成</label>
+</div>
+
+<div class="item" id="i6">
+<h3><span class="n">6</span>裝 Git，把起手資料夾抓進來，然後鎖住<span class="tag">貼一段給 AI・5–15 分鐘</span></h3>
+<p><b>為什麼：</b>Git 是替資料夾記住每一次修改的工具，「抓資料夾」「存版本」都靠它。抓好之後要「鎖住」：你之後寫的筆記推不回原本那一份，不會跑到別人那裡。這一項 AI 會分三小步做（裝 Git、抓資料夾、鎖住），每一步都會先問你。指令裡的 <code>origin</code> 是「這個資料夾預設連到 GitHub 上的哪一份」，<code>no_push</code> 是「只准抓、不准推回去」。</p>
+<p>下面這段是寫給 AI 看的，裡面的英文指令你不用懂，整段複製貼上：</p>
+<div class="say">這個資料夾是空的，請幫我把起手資料夾抓進來。照下面做，每一步先跟我說要做什麼，我說好才做：
+1. 資料夾路徑裡有 OneDrive、iCloud 或 Google 雲端硬碟，或資料夾裡已經有別的檔案：先停下來告訴我。
+2. 打 git --version 看有沒有 Git。沒有的話：Windows 先告訴我會同意 winget 的來源條款和 Git 的授權，我說好才跑 winget install --id Git.Git -e --source winget --accept-source-agreements --accept-package-agreements；Mac 會跳出「安裝命令列開發者工具」的視窗，請我按安裝。跳出「是否允許」我來按。要管理員帳密或指令被擋，就停下來告訴我，不要改去別的網站下載安裝檔。
+3. Windows 剛裝好叫不到 git 的話，第 4、5 步的 git 都改用完整路徑 C:\Program Files\Git\cmd\git.exe 來跑。
+4. 跑 git clone https://github.com/cwstedctw/ai-partner-starter.git .（下載要一點時間，逾時請設長一點）。跳出 GitHub 登入視窗我自己登；任何帳號、密碼、代碼都不要替我輸入。
+5. 抓好之後馬上跑 git remote set-url --push origin no_push，再跑 git remote -v 給我看，push 那一行要是 no_push。
+做完這五步就停，告訴我做到哪。</div>
+<ul>
+<li>Windows 可能跳「你要允許此應用程式變更你的裝置嗎？」：AI 剛說要裝 Git 之後跳的，按「是」。沒看到視窗就看工作列有沒有在閃的盾牌圖示。</li>
+<li>Mac 可能跳「要安裝命令列開發者工具嗎」：按「安裝」，等幾分鐘到十幾分鐘。</li>
+</ul>
+<div class="pass">它給你看的 <code>git remote -v</code> 裡，push 那一行是 <code>no_push</code>；資料夾裡出現 <code>AGENTS.md</code>、<code>先看這裡.html</code>、<code>memory</code>、<code>runbooks</code> 這些。</div>
+<div class="ask">你剛剛幫我抓起手資料夾，但現在＿＿＿（例如：卡在一個視窗／出現 Repository not found／說裝好 Git 但叫不到），畫面如附圖。請先不要動，告訴我現在的狀況，再說下一步。</div>
+<details><summary>沒辦法用 Git 抓的人：下載 ZIP</summary>
+<p>請發這個資料夾給你的人改給你 ZIP 檔（或在 GitHub 網頁按綠色的 Code → Download ZIP）。在 ZIP 上按右鍵 →「全部解壓縮」，把解開的內容放進第 5 項的資料夾。ZIP 來的資料夾沒有版本紀錄，第 9 項存到自己的 GitHub 時，AI 會照手冊另外處理。</p></details>
+<label class="done"><input type="checkbox" data-k="6">第 6 項完成</label>
+</div>
+
+<div class="item" id="i7">
+<h3><span class="n">7</span>報到<span class="tag">1 分鐘</span></h3>
+<p><b>為什麼：</b>資料夾裡的 <code>AGENTS.md</code> 是給 AI 的公約（它該怎麼工作、哪些事不能做）。它讀了，才是「你的夥伴」，不是一般的聊天機器人。每次開新對話第一句都是這句。</p>
+<div class="say">請讀 AGENTS.md，報到。</div>
+<div class="pass">它的第一行是：<code>主夥伴 · 你的資料夾路徑 · 手冊 6 本 · 進行中 0 件</code>。路徑是第 5 項那個資料夾。（6 本是出廠的數字；之後你請它寫新手冊、記新的事，這兩個數字會跟著變。）</div>
+<div class="ask">我貼了「請讀 AGENTS.md，報到。」，但你的第一行不是「主夥伴 · 路徑 · 手冊 N 本 · 進行中 M 件」的格式（或路徑不是我的資料夾）。請告訴我你現在打開的是哪個資料夾、裡面有沒有 AGENTS.md。</div>
+<label class="done"><input type="checkbox" data-k="7">第 7 項完成</label>
+</div>
+
+<div class="item" id="i8">
+<h3><span class="n">8</span>裝 GitHub CLI，登入 GitHub<span class="tag">貼一句給 AI・5–15 分鐘</span></h3>
+<p><b>為什麼：</b>GitHub CLI（<code>gh</code>）是讓 AI 替你操作 GitHub 的小工具。裝好、登入一次，之後「存上去」「抓回來」你都只要說一句話。</p>
+<div class="say">請照 runbooks/裝工具.md 幫我把工具裝好。gws 先不要裝，等我說。</div>
+<p>它會做的事，和你要做的事：</p>
+<ol>
+<li>它先跑「檢查工具」，告訴你哪些已經有（OK）、哪些還沒有（MISSING）。</li>
+<li>它說要裝 GitHub CLI，你說好；Windows 跳「是否允許」按「是」。</li>
+<li>它請你把 AI 程式<b>整個結束</b>再打開（新裝的工具要重開才叫得到）。Windows 最保險是重新開機；Mac 按 Command＋Q。打開同一個資料夾，貼：</li>
+</ol>
+<div class="say">請讀 AGENTS.md 報到，然後繼續裝工具。</div>
+<ol start="4">
+<li>它可能會問你要用什麼名字和信箱：Git 每存一版會記是誰存的。用英文名或暱稱就可以；第 9 項存到 GitHub 時，它會改用 GitHub 給的隱藏信箱，你真的信箱不會出現在紀錄裡。</li>
+<li>登入 GitHub：它給你一組八碼（像 <code>A1B2-C3D4</code>）。打開 <a href="https://github.com/login/device">github.com/login/device</a>，貼上八碼，確認畫面寫的是 <b>GitHub CLI</b>、右上角是你的頭像，再按綠色的 Authorize。八碼幾分鐘就過期：過期了跟它說「八碼過期了，再給我一組」。</li>
+<li>它把登入的帳號名念給你，你確認是自己的。</li>
+</ol>
+<div class="pass">它貼出的檢查結果裡，<code>git</code>、<code>gh</code> 都是 OK，「GitHub CLI is logged in」，而且它念出來的帳號名是你的。想自己看一次：Windows 雙擊資料夾裡的 <code>檢查工具.cmd</code>（畫面是英文：OK＝有了，MISSING＝一定要但還沒裝，-- ＝選配）；Mac 雙擊 <code>檢查工具.command</code>（第一次可能說無法打開：在檔案上按右鍵 →「打開」）。</div>
+<div class="ask">你在幫我裝 GitHub CLI（或登入 GitHub），但現在＿＿＿（例如：裝好了還是叫不到 gh／八碼貼上去說過期／畫面要我選一堆選項），畫面如附圖。請先不要動，告訴我狀況，再一步一步帶我。如果是學校管控的電腦裝不了，直接告訴我。</div>
+<div class="warn">學校或單位配發、有管控的電腦可能裝不了。AI 會說「需要資訊人員」：把這一頁轉給資訊人員，或告訴老師、助教，或發這個資料夾給你的人。</div>
+<label class="done"><input type="checkbox" data-k="8">第 8 項完成</label>
+</div>
+
+<div class="item" id="i9">
+<h3><span class="n">9</span>存到你自己的 GitHub<span class="tag">貼一句給 AI・5 分鐘</span></h3>
+<p><b>為什麼：</b>到這裡，資料夾還只在這台電腦上。存一份到你自己的 GitHub，電腦壞了、換電腦都抓得回來，而且每一版都留著。</p>
+<div class="say">幫我存到我自己的 GitHub</div>
+<p>它會：把登入的帳號念給你確認 → 掃一遍有沒有像身分證號、手機的字 → 在<b>你自己的帳號</b>底下開一個私人（Private）的 repo，名字是 <code>my-ai-partner</code> → 存上去 → 把網址給你。</p>
+<div class="pass">打開它給的網址，名字旁邊有 <b>Private</b> 這個字，網址裡的帳號名是你的。看到 Private 才算存好。</div>
+<div class="ask">你在幫我把資料夾存到我自己的 GitHub，但現在＿＿＿（例如：說掃到疑似個資／說 origin 不是我的／推上去被拒絕），畫面如附圖。請先不要動，照 runbooks/存到我的GitHub.md 告訴我現在停在哪一步、為什麼停。</div>
+<div class="warn">Private 不等於什麼都能放。別人的個資、研究資料、名單、帳號密碼，一律不放進這個資料夾（<code>material/README.md</code> 有四條判斷）。</div>
+<label class="done"><input type="checkbox" data-k="9">第 9 項完成</label>
+</div>
+
+<div class="item" id="i10">
+<h3><span class="n">10</span>讓夥伴認識你<span class="tag">5 分鐘</span></h3>
+<p><b>為什麼：</b>它記得越多你的事，越不用每次從頭解釋。這些都寫在 <code>memory/</code> 裡的文字檔，你隨時打得開、改得了。</p>
+<div class="say">幫我填 memory/我是誰.md。我用講的：我是＿＿＿（例：東華大二，修人工智慧概論），用＿＿（Windows／Mac），想請你幫我＿＿＿（例：記作業截止日、做作業時當家教、期末專題記進度）。</div>
+<p>再替它取個名字（選做）：</p>
+<div class="say">你叫＿＿。請記在 memory/夥伴.md。</div>
+<p>最後說：</p>
+<div class="say">幫我收工</div>
+<div class="pass">打開 <code>memory/我是誰.md</code> 看得到它剛寫的內容；<code>memory/log.md</code> 最後多了今天的幾行；它回「存好了」（它會把今天的改動存到你第 9 項開的 GitHub）。</div>
+<div class="ask">我請你填 memory/我是誰.md（或幫我收工），但我打開檔案沒看到變化。請告訴我你把內容存到哪個檔、完整路徑是什麼。</div>
+<label class="done"><input type="checkbox" data-k="10">第 10 項完成</label>
+</div>
+
+<h2>參　選配：讓夥伴處理信箱與雲端硬碟</h2>
+
+<div class="item" id="i11">
+<h3><span class="n">11</span>先走簡單的路：桌面版內建的連接<span class="tag">選配・3 分鐘</span></h3>
+<p><b>為什麼：</b>只是要它找信、讀信、整理重點、讀雲端硬碟的文件，不用另外裝東西。有沒有這個功能，看你的方案與帳號類型（學校帳號有時被學校關掉）。</p>
+<ol>
+<li>在 ChatGPT 或 Claude 桌面版打開「設定」，找「連接器」（Connectors；ChatGPT 有時叫「應用程式」）。有些版本要先切回一般聊天模式才看得到。</li>
+<li>在 Gmail、Google 雲端硬碟旁邊按「連接」，用你的 Google 帳號登入、按允許。</li>
+</ol>
+<div class="pass">問它「我信箱裡最近一封來自＿＿的信在講什麼？」，它答得出來。</div>
+<div class="ask">我想在 AI 桌面版連接 Gmail 和 Google 雲端硬碟，但在設定裡找不到連接器（或按了連接之後被擋），畫面如附圖。請告訴我該按哪裡；如果是我的帳號或方案不支援，也直接告訴我。</div>
+<label class="done"><input type="checkbox" data-k="11">第 11 項完成，或決定不用</label>
+</div>
+
+<div class="item" id="i12">
+<h3><span class="n">12</span>進階：gws（把回信建成 Gmail 草稿、帶附件、整批處理）<span class="tag">選配・20–40 分鐘</span></h3>
+<p><b>為什麼：</b>gws 是 Google Workspace 的指令工具。第 11 項做不到的三件事它做得到：把回信直接建成 Gmail 草稿、帶上附件、一次處理很多封。草稿一律你自己在 Gmail 看過、自己按傳送；這個資料夾的公約與手冊不准 AI 寄信，它只建草稿。</p>
+<p><b>先拿到一個檔：</b><code>client_secret.json</code>。它是「登入設定檔」，像一張通行證，告訴 Google「這個工具可以請使用者登入」。這個檔要從 Google Cloud（Google 給開發者用的後台）做出來，一般人自己做很麻煩，所以由老師（或發這個資料夾給你的人）做好給你。沒有這個檔，下面第 3 步會失敗。</p>
+<div class="warn">老師沒有發這個檔，就跳過這一項，用第 11 項。不要用來路不明的 <code>client_secret.json</code>，也不要把自己的傳給別人。</div>
+<ol>
+<li>把拿到的 <code>client_secret.json</code> 放進這個資料夾（或「下載」資料夾）。這個檔不會被存上 GitHub（已經擋掉了）。</li>
+<li>貼給 AI：</li>
+</ol>
+<div class="say">我拿到 client_secret.json 了，請照 runbooks/裝工具.md 的〈gws〉幫我裝 Node.js、uv、gws，然後帶我登入。登入由我自己按。</div>
+<ol start="3">
+<li>它會一項一項裝（每項先問你），中間會再請你把 AI 程式整個結束重開一次。</li>
+<li>登入：Windows 它會請你<b>自己雙擊</b>資料夾裡的 <code>設定信箱.cmd</code>。黑色視窗裡是英文，「WORK Google account」指你平常工作或上課用的 Google 帳號。瀏覽器打開後：選帳號 → 把它列的權限<b>全部勾起來</b>（少勾不會報錯，但之後某些功能會沒反應）→ 按繼續。視窗最後寫 <code>OK  login saved</code> 就好了。Mac 由 AI 跑登入指令，瀏覽器一樣你自己按。</li>
+<li>試一次：</li>
+</ol>
+<div class="say">請用 gws 在我的 Gmail 建一封草稿：寄給我自己，主旨「夥伴測試」，內文一句「這是 AI 夥伴建的草稿」。只建草稿，不要寄出，建好告訴我。</div>
+<div class="pass">Gmail 的「草稿」裡多一封「夥伴測試」，「寄件備份」裡沒有（代表它沒寄出）。看完把這封草稿刪掉。</div>
+<div class="ask">我在設定 gws，卡在＿＿＿（例如：找不到 client_secret.json／瀏覽器說「存取遭拒」或「這個應用程式未經驗證」／登入好了但建草稿說 403），畫面如附圖。請先不要重新登入，告訴我這個訊息是什麼意思、是我能解決的，還是要找給我檔案的人。</div>
+<div class="scroll"><table>
+<tr><th>看到什麼</th><th>意思</th></tr>
+<tr><td>「存取遭拒」「Access blocked」「org_internal」</td><td>登入設定檔不允許你這個帳號。換成對的帳號；還是不行，找給你檔案的人</td></tr>
+<tr><td>「Google 尚未驗證這個應用程式」</td><td>設定檔是測試用的。給你檔案的人說可以，才按「進階」→「繼續」</td></tr>
+<tr><td>403 insufficient scopes</td><td>登入時權限沒勾滿。請 AI 帶你重新登入，這次全部勾</td></tr>
+</table></div>
+<label class="done"><input type="checkbox" data-k="12">第 12 項完成，或決定不用</label>
+</div>
+
+<h2 id="daily">肆　平常怎麼用</h2>
+<section>
+<p>每次打開資料夾，第一句：</p>
+<div class="say">請讀 AGENTS.md，報到。</div>
+<p>然後用自己的話講就好。幾個例子：</p>
+<div class="say">這學期我修＿＿＿、＿＿＿，作業和截止日是：（講給它聽）。幫我記在手上的事。</div>
+<div class="say">照手冊陪我做這份作業：（貼作業說明）。我先講我的想法：＿＿＿</div>
+<div class="say">幫我開一夾：＿＿＿課期末專題。我們這組要做＿＿＿，截止日＿＿＿。</div>
+<div class="say">這是我報告要引的三個來源（貼上），照手冊幫我查每一個是不是真的、我引的說法對不對。</div>
+<p>做完一天：</p>
+<div class="say">幫我收工</div>
+<p>三個習慣，會讓它好用很多：</p>
+<ul>
+<li><b>一件事開一個新對話。</b>對話太長，它會忘記規矩。</li>
+<li><b>它說「完成」，問它三題：</b>這個說法哪來的？存到哪？有沒有動到別的檔？</li>
+<li><b>它記錯了就直接說</b>「這個不對，改成…」，它會改記憶檔，下次就對了。</li>
+</ul>
+<div class="scroll"><table>
+<tr><th>之後想做什麼</th><th>跟夥伴說</th></tr>
+<tr><td>每天存一次</td><td>幫我收工</td></tr>
+<tr><td>另一台電腦剛用過，這台要開工</td><td>先幫我拉最新的</td></tr>
+<tr><td>換新電腦</td><td>在新電腦做第 1 到 5 項，然後貼：「這是新電腦，這個資料夾是空的，我要把我自己 GitHub 上的 my-ai-partner 抓回來。每一步先跟我說、我說好才做：先看有沒有 git 和 gh，沒有就裝；再跑 gh auth login --web --git-protocol https 讓我登入，把登入的帳號念給我確認；然後跑 gh repo clone my-ai-partner . ；抓好後讀 AGENTS.md 報到，照 runbooks/存到我的GitHub.md 的〈換電腦之後〉做。」</td></tr>
+<tr><td>起手資料夾出了新版</td><td>陳老師有新版，幫我更新</td></tr>
+<tr><td>不想用 GitHub</td><td>幫我打包一份（它做成 ZIP，你自己搬到隨身碟或雲端硬碟）</td></tr>
+</table></div>
+<h4>資料夾裡有什麼</h4>
+<div class="scroll"><table>
+<tr><th>位置</th><th>是什麼</th></tr>
+<tr><td><code>memory/</code></td><td>AI 的記憶：我是誰、手上的事、我的規矩、做過什麼（log）。都是文字檔，你打得開</td></tr>
+<tr><td><code>projects/</code></td><td>一件長期的事一夾（一門課、一個專題、一篇論文）：現在到哪、做過的決定。出廠是空的，跟夥伴說「幫我開一夾」</td></tr>
+<tr><td><code>runbooks/</code></td><td>手冊：AI 照著做事的步驟。裝工具、存到我的 GitHub、寫信建草稿、做作業、開會前後、文獻查核</td></tr>
+<tr><td><code>material/</code></td><td>你放給 AI 讀的參考資料</td></tr>
+<tr><td><code>workspace/outbox/</code></td><td>AI 做出來的成品</td></tr>
+<tr><td><code>AGENTS.md</code></td><td>給 AI 看的公約，你不用讀</td></tr>
+</table></div>
+</section>
+
+<h2 id="stuck">伍　卡住怎麼辦</h2>
+<section>
+<ol>
+<li>先截圖，用最上面的求救句問 AI。大部分卡關它看了畫面就能帶你過。</li>
+<li>同一項試了兩次還是不行，就停。不要反覆重裝，也不要照網路上找到的指令亂試。</li>
+<li>把截圖和「卡在第幾項」寄給老師、助教，或發這個資料夾給你的人。</li>
+<li>做不完也能先用：第 1、2、3、5、6、7 項做完，夥伴就能在這台電腦上工作；第 8 項（裝 GitHub CLI、登入）和第 9 項（存到 GitHub）可以之後再補，補之前資料夾只在這台電腦上。</li>
+</ol>
+<div class="scroll"><table>
+<tr><th>看到什麼</th><th>怎麼辦</th></tr>
+<tr><td>報到的第一行沒有「手冊 N 本」</td><td>它沒讀公約。關掉對話，重新打開這個資料夾，再貼「請讀 AGENTS.md，報到。」</td></tr>
+<tr><td>報到印的路徑不是這個資料夾</td><td>開錯資料夾；用「開啟資料夾」重選</td></tr>
+<tr><td><code>Repository not found</code>、抓不下來</td><td>網址打錯，或這個起手資料夾還沒公開給你。用瀏覽器打開 github.com/cwstedctw/ai-partner-starter 看得到檔案清單才抓得下來；看不到就問發給你的人</td></tr>
+<tr><td>叫不到 <code>git</code>、<code>gh</code></td><td>剛裝好要把 AI 程式整個結束再打開；還是不行就重新開機一次</td></tr>
+<tr><td>它說「完成」但找不到檔案</td><td>問它：存到哪？打開那個位置看。沒有就是沒做</td></tr>
+<tr><td>它要你貼密碼、驗證碼、金鑰</td><td>不要貼。登入一律在瀏覽器裡你自己做</td></tr>
+<tr><td>雙擊 <code>.cmd</code> 跳「開啟檔案 - 安全性警告」</td><td>檔名是你要開的那一個就按「執行」</td></tr>
+<tr><td>雙擊 <code>.cmd</code> 跳藍色的「Windows 已保護您的電腦」</td><td>按「其他資訊」，檔名是你要開的那一個再按「仍要執行」</td></tr>
+<tr><td>說額度用完、要升級方案</td><td>等它說的時間過了再做，或換另一家 AI 桌面版打開同一個資料夾，貼「請讀 AGENTS.md，報到。」接著做</td></tr>
+</table></div>
+</section>
+
+<h2 id="final">陸　最後自我檢查</h2>
+<section>
+<p>這份是自助式的，不用交回報。四件事都成立才算完成：</p>
+<ol>
+<li>第 1 到 10 項全部打勾。</li>
+<li>新開一個對話貼「請讀 AGENTS.md，報到。」，第一行的路徑是你的資料夾、有「手冊 N 本」（出廠是 6 本）。</li>
+<li>你說得出自己的 GitHub 帳號名；瀏覽器打開 <code>github.com/你的帳號名/my-ai-partner</code> 看得到 <b>Private</b>。</li>
+<li><code>memory/我是誰.md</code> 裡是你自己的內容。</li>
+</ol>
+</section>
+
+<h2 id="diy">附錄　不靠 AI，自己裝</h2>
+<section>
+<p>AI 裝不了、或你想自己來的時候再看。裝好一樣之後，關掉視窗、開一個新的，新裝的指令才找得到。第一次用 <code>winget</code> 它會問要不要同意來源條款，打 Y 按 Enter。</p>
+<details><summary>Windows</summary>
+<p>按鍵盤 Windows 鍵，打 PowerShell，按 Enter。按「複製」後在視窗裡按滑鼠右鍵就是貼上，再按 Enter。</p>
+<p>Git</p><div class="cmd">winget install --id Git.Git -e --source winget</div>
+<p>看 Git 裝好了沒（要看到 <code>git version 2.…</code>）</p><div class="cmd">git --version</div>
+<p>GitHub CLI</p><div class="cmd">winget install --id GitHub.cli -e --source winget</div>
+<p>登入 GitHub（照它問的選：GitHub.com → HTTPS → Yes → Login with a web browser，然後貼八碼）</p><div class="cmd">gh auth login</div>
+<p>看登入了沒（要看到 <code>Logged in to github.com account 你的帳號名</code>）</p><div class="cmd">gh auth status</div>
+<p>Node.js（要用 gws 才裝）</p><div class="cmd">winget install --id OpenJS.NodeJS.LTS -e --source winget</div>
+<p>uv（要用 gws 寫信才裝）</p><div class="cmd">winget install --id astral-sh.uv -e --source winget</div>
+<p>gws（注意是 <code>npm.cmd</code>：新電腦的 PowerShell 預設不讓 <code>npm</code> 這種小程式執行，加 <code>.cmd</code> 就繞開，不用改電腦設定）</p><div class="cmd">npm.cmd install -g @googleworkspace/cli</div>
+<p>看 gws 裝好了沒</p><div class="cmd">gws.cmd --version</div>
+<p>gws 登入：先放好 <code>client_secret.json</code>，雙擊 <code>設定信箱.cmd</code> 最簡單。手動的話把檔放到 <code>%USERPROFILE%\.config\gws\</code>，再跑下面這行（引號不能省，少了引號登入看起來成功、權限卻只剩一點）</p><div class="cmd">gws.cmd auth login -s "gmail,drive,calendar,sheets,docs"</div>
+<p>看 gws 登入了沒（要看到 <code>"has_refresh_token": true</code>）</p><div class="cmd">gws.cmd auth status</div>
+</details>
+<details><summary>Mac</summary>
+<p>打開「終端機」（按 Command＋空白鍵，打 Terminal）。</p>
+<p>Git：打下面這行；沒裝過會跳視窗問要不要安裝命令列開發者工具，按「安裝」。</p><div class="cmd">git --version</div>
+<p>GitHub CLI：到 <a href="https://cli.github.com">cli.github.com</a> 下載 macOS 的安裝檔（.pkg）雙擊安裝。電腦有 Homebrew（Mac 上裝工具的管理程式）的話也可以：</p><div class="cmd">brew install gh</div>
+<p>登入 GitHub</p><div class="cmd">gh auth login</div>
+<p>Node.js（要用 gws 才裝）：到 <a href="https://nodejs.org">nodejs.org</a> 下載 LTS 版（長期支援的穩定版）安裝檔。</p>
+<p>gws</p><div class="cmd">npm install -g @googleworkspace/cli</div>
+<p>gws 登入：先把 <code>client_secret.json</code> 放到 <code>~/.config/gws/</code>，再跑：</p><div class="cmd">gws auth login -s "gmail,drive,calendar,sheets,docs"</div>
+<p>Mac 這一段還沒在乾淨的 Mac 上整輪跑過；卡住請截圖求救。</p>
+</details>
+</section>
+
+<p class="lead">步驟寫法沿用 2026-10-16 宜大×東華教師工作坊的行前準備頁；指令在 2026-11-08 至 11-10 對過 GitHub CLI、winget、uv、gws 的官方說明；「ChatGPT 免費方案也有 Codex、額度依方案不同」是 2026-11-10 讀 OpenAI 說明中心〈Using Codex with your ChatGPT plan〉確認的。工具改版很快，畫面字樣與方案以各官方頁面現況為準。</p>
+</main>
+<script>
+document.querySelectorAll('.say,.cmd,.ask').forEach(function(el){
+  var b=document.createElement('button');b.className='cp';b.type='button';b.textContent='複製';
+  var text=el.textContent;
+  b.addEventListener('click',function(){
+    var done=function(){b.textContent='已複製';b.classList.add('ok');setTimeout(function(){b.textContent='複製';b.classList.remove('ok')},1600)};
+    function fallback(){var t=document.createElement('textarea');t.value=text;document.body.appendChild(t);t.select();try{document.execCommand('copy');done()}catch(e){}document.body.removeChild(t)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,fallback)}else{fallback()}
+  });
+  el.appendChild(b);
+});
+(function(){
+  var boxes=[].slice.call(document.querySelectorAll('label.done input')),P='ai-partner-starter-v2-';
+  function upd(){var n=boxes.filter(function(c){return c.checked}).length;document.getElementById('cnt').textContent='完成 '+n+'／'+boxes.length;document.getElementById('pg').value=n}
+  boxes.forEach(function(c){
+    try{c.checked=localStorage.getItem(P+c.dataset.k)==='1'}catch(e){}
+    c.addEventListener('change',function(){try{localStorage.setItem(P+c.dataset.k,c.checked?'1':'0')}catch(e){}upd()});
+  });
+  document.getElementById('rst').addEventListener('click',function(){boxes.forEach(function(c){c.checked=false;try{localStorage.removeItem(P+c.dataset.k)}catch(e){}});upd()});
+  upd();
+})();
+</script>
+</body>
+</html>

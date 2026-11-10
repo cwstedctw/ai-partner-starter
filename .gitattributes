@@ -1,0 +1,8 @@
+# 文字檔一律 LF；Windows 批次檔用 CRLF（cmd.exe 讀 LF 偶爾會吃字）
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.png binary
+*.pdf binary
+# 主人的 AI 會一直往檔尾加行的兩個檔：兩邊都加行時兩邊都留（兩台電腦都用、併陳老師新版時才不會卡住）
+runbooks/目錄.md merge=union
+memory/log.md merge=union
