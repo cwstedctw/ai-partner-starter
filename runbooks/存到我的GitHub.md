@@ -81,7 +81,7 @@ git -c core.quotepath=false grep --untracked -nE '[A-Z][1289][0-9]{8}|09[0-9]{2}
 ## 每天存（「幫我收工」第 4 步，或他說「幫我存一下」）
 
 1. `git remote get-url --push --all origin`：
-   - 不是 git 資料夾、沒有 origin、或 origin 是陳老師的 → 還沒接。只說一句：「這個資料夾還沒存到你自己的 GitHub；要的話說『幫我存到我自己的 GitHub』。」他說不用 → `memory/我的規矩.md` 檔尾加一行「不存 GitHub（日期）」，那一行在就不再提。
+   - 不是 git 資料夾、電腦叫不到 git、沒有 origin、或 origin 是陳老師的 → 還沒接（這裡不要轉去裝工具）。只說一句：「這個資料夾還沒存到你自己的 GitHub；要的話說『幫我存到我自己的 GitHub』。」他說不用 → `memory/我的規矩.md` 檔尾加一行「不存 GitHub（日期）」，那一行在就不再提。
    - 是 `https://github.com/<帳號>/<名字>` → `<帳號>` 要跟 `memory/我的規矩.md`「夥伴資料夾存在 GitHub」那一行寫的一樣（沒有那一行就用 `gh api user --jq .login` 對）。對不上 → 停，告訴他。
    - 再看 `git branch --show-current`：不是 `main` → 停，把輸出給他看，請他問陳老師。
 2. 有 gh：`gh repo view <帳號>/<名字> --json visibility --jq .visibility` 要印 `PRIVATE`。不是 → 停，告訴他「這個 repo 現在不是私人的」，不推。沒有 gh 就跳過這一項。
