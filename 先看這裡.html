@@ -95,7 +95,7 @@ nav a{margin-right:.9em;white-space:nowrap}
 <h4>ChatGPT 桌面版（裡面有 Codex）</h4>
 <ol>
 <li>先到 <a href="https://chatgpt.com">chatgpt.com</a> 登入或註冊，記住用的是哪個帳號。桌面版要用同一個帳號登入。</li>
-<li>Windows：打開 Microsoft Store，搜尋「ChatGPT」，會看到兩個，裝名字就叫「ChatGPT」的那一個，不是「ChatGPT Classic」（Classic 是舊版，裡面沒有 Codex）。Mac：到 <a href="https://chatgpt.com/download">chatgpt.com/download</a> 下載，拖進「應用程式」。</li>
+<li>Windows：打開 Microsoft Store，搜尋「ChatGPT」，會看到兩個，裝名字就叫「ChatGPT」的那一個，不是「ChatGPT Classic」（Classic 是舊版，裡面沒有 Codex）。公務電腦的 Microsoft Store 打不開或不能安裝：停在這一項，找資訊人員或老師、助教，或發這個資料夾給你的人，不要自己找別的下載點。Mac：到 <a href="https://chatgpt.com/download">chatgpt.com/download</a> 下載，拖進「應用程式」。</li>
 <li>打開、登入。左上角寫著「ChatGPT」的選單可以切 ChatGPT／Codex，切到 <b>Codex</b>。找不到 Codex：先確認登入的是同一個帳號、裝的不是 Classic；還是沒有，<b>停在這一項</b>，用下面的求救句問，不要往下做。</li>
 </ol>
 <h4>Claude 桌面版（裡面有 Code）</h4>
@@ -151,7 +151,7 @@ nav a{margin-right:.9em;white-space:nowrap}
 <h3><span class="n">5</span>決定資料夾放哪，建一個空資料夾<span class="tag">2 分鐘</span></h3>
 <p><b>為什麼：</b>夥伴資料夾不能放在會自動同步的地方。「同步」＝你一改檔案，雲端（OneDrive、iCloud、Google 雲端硬碟）就自動複製一份上網；它會跟 Git 的版本紀錄打架：檔案被鎖住、出現重複檔、紀錄對不上，而且不會跳出任何錯誤訊息。Windows 的「桌面」「文件」常常就在 OneDrive 裡。</p>
 <ul>
-<li>Windows：建 <code>D:\AI夥伴</code>；沒有 D 槽就 <code>C:\AI夥伴</code>。（打開檔案總管 → 進 D 槽 → 空白處按右鍵 →「新增」→「資料夾」。）</li>
+<li>Windows：建 <code>D:\AI夥伴</code>；沒有 D 槽就 <code>C:\AI夥伴</code>。（打開檔案總管 → 進 D 槽 → 空白處按右鍵 →「新增」→「資料夾」。）C 槽最上層建不了（公務電腦常這樣）：改建在 <code>C:\Users\你的帳號\AI夥伴</code>，並確認路徑裡沒有 OneDrive。</li>
 <li>Mac：家目錄底下建 <code>AI夥伴</code>。（Finder 選單「前往」→「個人專屬」→ 按右鍵「新增檔案夾」。）</li>
 </ul>
 <p>不確定那個位置會不會被同步，問 AI：</p>
@@ -211,11 +211,11 @@ nav a{margin-right:.9em;white-space:nowrap}
 <div class="say">請讀 AGENTS.md 報到，然後繼續裝工具。</div>
 <ol start="4">
 <li>它可能會問你要用什麼名字和信箱：Git 每存一版會記是誰存的。用英文名或暱稱就可以；第 9 項存到 GitHub 時，它會改用 GitHub 給的隱藏信箱，你真的信箱不會出現在紀錄裡。</li>
-<li>登入 GitHub：它給你一組八碼（像 <code>A1B2-C3D4</code>）。打開 <a href="https://github.com/login/device">github.com/login/device</a>，貼上八碼，確認畫面寫的是 <b>GitHub CLI</b>、右上角是你的頭像，再按綠色的 Authorize。八碼幾分鐘就過期：過期了跟它說「八碼過期了，再給我一組」。</li>
+<li>登入 GitHub：它給你一組八個英數字的代碼（像 <code>A1B2-C3D4</code>）。打開 <a href="https://github.com/login/device">github.com/login/device</a>，貼上代碼，確認畫面寫的是 <b>GitHub CLI</b>、右上角是你的頭像，再按綠色的 Authorize。代碼幾分鐘就過期：過期了跟它說「代碼過期了，再給我一組」。</li>
 <li>它把登入的帳號名念給你，你確認是自己的。</li>
 </ol>
-<div class="pass">它貼出的檢查結果裡，<code>git</code>、<code>gh</code> 都是 OK，「GitHub CLI is logged in」，而且它念出來的帳號名是你的。想自己看一次：Windows 雙擊資料夾裡的 <code>檢查工具.cmd</code>（畫面是英文：OK＝有了，MISSING＝一定要但還沒裝，-- ＝選配）；Mac 雙擊 <code>檢查工具.command</code>（第一次可能說無法打開：在檔案上按右鍵 →「打開」）。</div>
-<div class="ask">你在幫我裝 GitHub CLI（或登入 GitHub），但現在＿＿＿（例如：裝好了還是叫不到 gh／八碼貼上去說過期／畫面要我選一堆選項），畫面如附圖。請先不要動，告訴我狀況，再一步一步帶我。如果是學校管控的電腦裝不了，直接告訴我。</div>
+<div class="pass">它貼出的檢查結果裡，<code>git</code>、<code>gh</code> 都是 OK，「GitHub CLI is logged in」，而且它念出來的帳號名是你的。想自己看一次：Windows 雙擊資料夾裡的 <code>檢查工具.cmd</code>（畫面是英文：OK＝有了，MISSING＝一定要但還沒裝，-- ＝選配，或還沒做）；Mac 雙擊 <code>檢查工具.command</code>（第一次可能說無法打開：在檔案上按右鍵 →「打開」）。</div>
+<div class="ask">你在幫我裝 GitHub CLI（或登入 GitHub），但現在＿＿＿（例如：裝好了還是叫不到 gh／代碼貼上去說過期／畫面要我選一堆選項），畫面如附圖。請先不要動，告訴我狀況，再一步一步帶我。如果是學校管控的電腦裝不了，直接告訴我。</div>
 <div class="warn">學校或單位配發、有管控的電腦可能裝不了。AI 會說「需要資訊人員」：把這一頁轉給資訊人員，或告訴老師、助教，或發這個資料夾給你的人。</div>
 <label class="done"><input type="checkbox" data-k="8">第 8 項完成</label>
 </div>
@@ -328,6 +328,7 @@ nav a{margin-right:.9em;white-space:nowrap}
 <li>先截圖，用最上面的求救句問 AI。大部分卡關它看了畫面就能帶你過。</li>
 <li>同一項試了兩次還是不行，就停。不要反覆重裝，也不要照網路上找到的指令亂試。</li>
 <li>把截圖和「卡在第幾項」寄給老師、助教，或發這個資料夾給你的人。</li>
+<li>電腦完全不能裝東西（公務電腦被管控）：先用網頁版的 AI 聊天做文字工作。把 <code>runbooks/</code> 裡那一本手冊的內容整段貼給它，再貼你的資料。網頁版記不住你的事、動不了你電腦裡的檔，也不要讓它碰正式系統；真的單據、名單先照 <code>material/範例-改名前後.md</code> 改名再貼。</li>
 <li>做不完也能先用：第 1、2、3、5、6、7 項做完，夥伴就能在這台電腦上工作；第 8 項（裝 GitHub CLI、登入）和第 9 項（存到 GitHub）可以之後再補，補之前資料夾只在這台電腦上。</li>
 </ol>
 <div class="scroll"><table>
@@ -363,7 +364,7 @@ nav a{margin-right:.9em;white-space:nowrap}
 <p>Git</p><div class="cmd">winget install --id Git.Git -e --source winget</div>
 <p>看 Git 裝好了沒（要看到 <code>git version 2.…</code>）</p><div class="cmd">git --version</div>
 <p>GitHub CLI</p><div class="cmd">winget install --id GitHub.cli -e --source winget</div>
-<p>登入 GitHub（照它問的選：GitHub.com → HTTPS → Yes → Login with a web browser，然後貼八碼）</p><div class="cmd">gh auth login</div>
+<p>登入 GitHub（照它問的選：GitHub.com → HTTPS → Yes → Login with a web browser，然後貼它給的代碼）</p><div class="cmd">gh auth login</div>
 <p>看登入了沒（要看到 <code>Logged in to github.com account 你的帳號名</code>）</p><div class="cmd">gh auth status</div>
 <p>Node.js（要用 gws 才裝）</p><div class="cmd">winget install --id OpenJS.NodeJS.LTS -e --source winget</div>
 <p>uv（要用 gws 寫信才裝）</p><div class="cmd">winget install --id astral-sh.uv -e --source winget</div>
