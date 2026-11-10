@@ -7,3 +7,7 @@
 這是一個起手資料夾：一頁公約、幾個記憶檔、六本手冊。用 AI 桌面版打開它，AI 就照公約工作、把事情記在 `memory/` 與 `projects/`。短版說明在 `開始.md`。
 
 抓下來之後，AI 會先把資料夾鎖住，你寫的東西推不回這裡（設定叫 `no_push`）；要備份，存到你自己帳號的私人 repo（跟 AI 說「幫我存到我自己的 GitHub」）。
+
+## 授權
+
+© 2026 陳文盛（國立東華大學通識教育中心）× AI 協作團隊。本範本以 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hant) 授權：歡迎教學與自學使用；改作請同樣開放，請勿商用。你自己寫進 `memory/`、`projects/` 等資料夾的內容是你的，不受這條限制。全文見 `LICENSE`。

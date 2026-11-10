@@ -1,0 +1,30 @@
+AI 夥伴起手資料夾（ai-partner-starter）
+© 2026 陳文盛（國立東華大學通識教育中心）× AI 協作團隊
+（洄瀾／Claude、立霧／Codex、秀姑巒／Gemini、木瓜溪／OpenCode、美崙溪／Grok）
+
+本範本以「創用 CC 姓名標示—非商業性—相同方式分享 4.0 國際」授權條款釋出。
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License
+(CC BY-NC-SA 4.0).
+
+您可以自由：
+- 分享——以任何媒介或格式重製及散布本素材
+- 修改——重混、轉換本素材、及依本素材建立新素材
+
+惟需遵照下列條件：
+- 姓名標示——您必須給予適當表彰、提供指向本授權條款的連結。
+- 非商業性——您不得將本素材進行商業目的之使用。
+- 相同方式分享——若您重混、轉換或依本素材建立新素材，您必須依
+  本素材的授權條款來散布您的貢獻物。
+
+授權條款全文：
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-Hant
+摘要（繁體中文）：
+https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hant
+
+補充說明（不是授權條款的一部分）：
+這份授權管的是範本本身（公約、手冊、說明頁、小工具）。您拿去用之後，
+自己寫進 memory/、projects/、material/、workspace/ 的內容是您自己的；
+存在自己的私人 repo、不對外散布，不需要另外標示或公開。
+把改過的範本再發給別人（例如老師改成自己課堂的版本發給學生）時，
+請保留本檔、註明改自這份範本，並用同一種授權。

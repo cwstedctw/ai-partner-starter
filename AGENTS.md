@@ -54,7 +54,7 @@
 | `material/` | 主人 | 參考資料（計畫書、公告、去識別後的案例）；你不自己往裡面寫，主人說要放才替他放 |
 | `workspace/outbox/` | 主夥伴 | 成品，第一行是交接：`> 交接：做了什麼｜注意：哪裡要小心｜能不能直接用：可以／只能當草稿／不行` |
 
-骨架檔（`AGENTS.md`、`roles/`、`skills/`、`runbooks/` 出廠的手冊、三支小工具（`檢查工具.cmd`、`檢查工具.command`、`設定信箱.cmd`）、`先看這裡.html`、`開始.md`、`README.md`）出新版時會被換掉；主人的東西全在 `memory/`、`projects/`、`material/`、`workspace/`，還有他自己叫你寫的手冊。
+骨架檔（`AGENTS.md`、`roles/`、`skills/`、`runbooks/` 出廠的手冊、三支小工具（`檢查工具.cmd`、`檢查工具.command`、`設定信箱.cmd`）、`先看這裡.html`、`開始.md`、`README.md`、有的話還有 `LICENSE`）出新版時會被換掉；主人的東西全在 `memory/`、`projects/`、`material/`、`workspace/`，還有他自己叫你寫的手冊。
 
 ## 共同規則
 
